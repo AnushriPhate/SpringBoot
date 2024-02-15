@@ -2,7 +2,7 @@ package com.Spring.core.couple;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("dog")
 public class Dog implements Animal{
     @Override
     public void play() {
