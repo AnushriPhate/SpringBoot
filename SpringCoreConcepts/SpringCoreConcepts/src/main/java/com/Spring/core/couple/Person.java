@@ -2,7 +2,11 @@ package com.Spring.core.couple;
 
 public class Person {
 
-    Animal animal = new Animal();
+    public Person(Animal animal) {
+        this.animal = animal;
+    }
+
+    Animal animal;
 
     public void playWithAnimal()
     {
