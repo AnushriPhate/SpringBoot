@@ -12,6 +12,10 @@ public class Person {
     @Autowired
     Student student;
 
+    @Autowired
+    @Qualifier("samosa1")
+    Samosa samosa;
+
     public Animal getAnimal() {
         return animal;
     }
@@ -31,6 +35,7 @@ public class Person {
     public void setStudent(Student student) {
         System.out.println("setting animal");
         this.student = student;
+
     }
 
     //constructor based injection
@@ -44,5 +49,6 @@ public class Person {
     {
         animal.play();
         student.detail();
+        samosa.eat();
     }
 }

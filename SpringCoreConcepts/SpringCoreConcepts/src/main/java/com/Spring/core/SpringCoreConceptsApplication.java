@@ -1,13 +1,12 @@
 package com.Spring.core;
 
-import com.Spring.core.couple.Animal;
-import com.Spring.core.couple.Cat;
-import com.Spring.core.couple.Dog;
-import com.Spring.core.couple.Person;
+import com.Spring.core.couple.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Primary;
 import otherPackage.Trial;
 
 @SpringBootApplication
@@ -29,5 +28,20 @@ public class SpringCoreConceptsApplication {
 //		dog.play();
 
 	}
+//	@Bean(name = "samosa1")
+////	@Primary
+//	public Samosa getSamosa1() {
+//		return new Samosa("Tandori Samosa");
+//	}
+//
+//	@Bean(name = "samosa2")
+////	@Primary
+//	public Samosa getSamosa2() {
+//		return new Samosa("Khatta Samosa");
+//	}
 
+//	@Bean
+//	public Samosa getSamosa2() {
+//		return new Samosa();
+//	}
 }
