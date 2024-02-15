@@ -39,20 +39,20 @@ public class SpringCoreConceptsApplication {
 //		Pepsi bean1 = context.getBean(Pepsi.class);
 //		System.out.println(bean1);
 
-		Pepsi pepsi = context.getBean(Pepsi.class);
-		System.out.println(pepsi);
-		Soda soda = pepsi.getSoda();
-		System.out.println(soda);
-
-		Pepsi pepsi1 = context.getBean(Pepsi.class);
-		System.out.println(pepsi1);
-		Soda soda1 = pepsi.getSoda();
-		System.out.println(soda1);
-
-		Pepsi pepsi2 = context.getBean(Pepsi.class);
-		System.out.println(pepsi1);
-		Soda soda2 = pepsi.getSoda();
-		System.out.println(soda1);
+//		Pepsi pepsi = context.getBean(Pepsi.class);
+//		System.out.println(pepsi);
+//		Soda soda = pepsi.getSoda();
+//		System.out.println(soda);
+//
+//		Pepsi pepsi1 = context.getBean(Pepsi.class);
+//		System.out.println(pepsi1);
+//		Soda soda1 = pepsi.getSoda();
+//		System.out.println(soda1);
+//
+//		Pepsi pepsi2 = context.getBean(Pepsi.class);
+//		System.out.println(pepsi1);
+//		Soda soda2 = pepsi.getSoda();
+//		System.out.println(soda1);
 	}
 //	@Bean(name = "samosa1")
 ////	@Primary
