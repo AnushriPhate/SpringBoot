@@ -23,10 +23,10 @@ public class SpringCoreConceptsApplication {
 		Trial trialBean = context.getBean(Trial.class);
 		trialBean.testing();
 
-		Animal cat = context.getBean("cat", Animal.class);
-		Animal dog = context.getBean("dog", Animal.class);
-		cat.play();
-		dog.play();
+//		Animal cat = context.getBean("cat", Animal.class);
+//		Animal dog = context.getBean("dog", Animal.class);
+//		cat.play();
+//		dog.play();
 
 	}
 

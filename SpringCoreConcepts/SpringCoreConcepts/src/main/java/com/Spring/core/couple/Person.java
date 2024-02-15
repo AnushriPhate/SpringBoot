@@ -6,18 +6,43 @@ import org.springframework.stereotype.Component;
 
 @Component("person")
 public class Person {
-
-
-//    @Autowired
-//    @Qualifier("cat")
+    //field injection
+    @Autowired
     Animal animal;
+    @Autowired
+    Student student;
 
-    @Autowired //if wanna use qualifier at constructor use it like this
-    public Person(@Qualifier("cat") Animal animal) {
+    public Animal getAnimal() {
+        return animal;
+    }
+
+    //setter based injection
+//    @Autowired
+    public void setAnimal(Animal animal) {
+        System.out.println("setting animal");
         this.animal = animal;
     }
+
+    public Student getStudent() {
+        return student;
+    }
+
+//    @Autowired
+    public void setStudent(Student student) {
+        System.out.println("setting animal");
+        this.student = student;
+    }
+
+    //constructor based injection
+//    @Autowired
+//    public Person(Animal animal, Student student) {
+//        System.out.println("calling constructor..autowiring");
+//        this.animal = animal;
+//        this.student = student;
+//    }
     public void playWithAnimal()
     {
         animal.play();
+        student.detail();
     }
 }
